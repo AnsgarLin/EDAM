@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.edam.main"
+    android:installLocation="auto"
+    android:versionCode="201150510"
+    android:versionName="2.01.150510" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.mixpanel.android.surveys.SurveyActivity" />
+        <activity
+            android:name="com.edam.main.EDAMMain"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.vpadn.widget.VpadnActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|keyboard|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity android:name="com.facebook.LoginActivity" >
+        </activity>
+    </application>
+
+    <dependency>
+        <groupId>
+com.squareup.picasso
+        </groupId>
+
+        <artifactId>
+picasso
+        </artifactId>
+
+        <version>
+2.3.4
+        </version>
+    </dependency>
+    <dependency>
+        <groupId>
+com.squareup.okhttp
+        </groupId>
+
+        <artifactId>
+okhttp
+        </artifactId>
+
+        <version>
+2.0.0
+        </version>
+    </dependency>
+    <dependency>
+        <groupId>
+com.squareup.okhttp
+        </groupId>
+
+        <artifactId>
+okhttp-urlconnection
+        </artifactId>
+
+        <version>
+2.0.0-RC2
+        </version>
+    </dependency>
+
+</manifest>

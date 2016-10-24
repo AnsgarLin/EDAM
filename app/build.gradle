@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.edam.main"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.parse.bolts:bolts-android:1.4.0'
+    compile 'com.parse:parse-android:1.13.1'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+    compile 'com.google.android.gms:play-services:9.6.1'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile group: 'com.nineoldandroids', name: 'library', version: '2.4.0'
+    compile 'com.facebook.android:facebook-android-sdk:4.16.1'
+    compile 'com.mixpanel.android:mixpanel-android:4.9.2'
+    compile 'com.google.android.gms:play-services:9.6.1'
+    compile 'com.flurry.android:analytics:6.3.1'
+    testCompile 'junit:junit:4.12'
+}

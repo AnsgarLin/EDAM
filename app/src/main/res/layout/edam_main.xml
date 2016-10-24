@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edam_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.edam.main.ActPageSlideTab
+            android:id="@+id/act_page_slide_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </com.edam.main.ActPageSlideTab>
+
+        <com.edam.page.ActViewPager
+            android:id="@+id/act_page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:context=".EDAMMain" />
+
+        <Space
+            android:id="@+id/buttom_panel_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+    <com.edam.buttompanel.ButtomPanel
+        android:id="@+id/buttom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <RelativeLayout
+            android:id="@+id/buttom_panel_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+    </com.edam.buttompanel.ButtomPanel>
+
+    <com.edam.floatsearch.FloatSearch
+        android:id="@+id/float_search_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/flaot_playground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.edam.floatsearch.FloatSearch>
+
+</RelativeLayout>

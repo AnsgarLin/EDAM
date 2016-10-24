@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EDAM</string>
+    <string name="app_version">版本</string>
+    <string name="app_update">更新內容</string>
+    <string name="app_update_info">        
+        + 新增廣告 +\n
+        + 減少刷新數量提升下載速度 +\n</string>
+    <string name="page_load">讀取中，請確保網路順暢</string>
+    <string name="action_settings">Settings</string>
+    <string name="city_title">地區</string>
+    <string name="date_title_from">時間從</string>
+    <string name="date_title_to">至</string>
+    <string name="date_start_after_end_error">到期日不得早於起始日</string>
+    <string name="keyword_title">關鍵字</string>
+    <string name="check_network_enable">請確認網路連線是否順暢</string>
+    <string name="got_no_futher_result">查無更新的資訊</string>
+    <string name="no_relative_image">無相關圖片</string>
+    <string name="image_not_load_finish">圖片尚未讀取完成</string>
+    <string name="image_load_fail">圖片讀取發生錯誤，請檢查網路連線是否順暢</string>
+    <string name="query_is_as_the_same_as_last">當前列表即為此搜尋條件之結果</string>
+    <string name="ticket_free">當前活動免費</string>
+    <string name="ticket_get">當前活動需索票，請詳見官網</string>
+    <string name="fb_fans">粉絲團</string>
+    <string name="mail_question">客服信箱</string>
+    <string name="title_keyword">輸入活動名稱</string>
+    <string name="mail_question_dialog_title">從：</string>
+    <string name="already_top">已至第一筆</string>
+    <string name="already_buttom">已至當前最後一筆</string>
+    <string name="facebook_publish_network_error">發佈失敗，請檢查網路連線是否順暢</string>
+    <string name="facebook_app_id">827170203989941</string>
+    <string name="read_more">讀取更多</string>
+
+</resources>
